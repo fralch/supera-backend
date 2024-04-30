@@ -19,8 +19,9 @@ model Usuarios {
   id        Int      @id @default(autoincrement())
   dni       Int   @unique
   usuario   String 
+  clave    String
   nombre    String
-  celular   Int
+  celular   String
   correo    String?
   direccion String?
 }
@@ -29,14 +30,15 @@ model Casos {
   id        Int      @id @default(autoincrement())
   cliente   String
   condicion String?
-  celular  Int
+  celular  String
   expediente String? 
   fiscal   String?
   materia String
   proceso String?
   mesa  String
   contrato String
-  acto_procesal String?
+  acto_procesal  String?
+  culminado Int
   fecha  DateTime
 
 
