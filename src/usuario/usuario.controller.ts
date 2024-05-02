@@ -16,5 +16,15 @@ export class UsuarioController {
         return this.usuarioService.findAll();
     }
 
+    @Post('login')
+    async login(@Body() data: {usuario: string, clave: string}): Promise<Usuarios | null> {
+        const usuario = await this.usuarioService.findByUsuario(data.usuario);
+        if(usuario && usuario.clave === data.clave) {
+            return usuario;
+        } else {
+            throw new BadRequestException('Usuario o contraseña incorrectos');
+        }
+    }
+
   
 }

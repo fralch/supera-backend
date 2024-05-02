@@ -17,4 +17,11 @@ export class UsuarioService {
         return this.prisma.usuarios.findMany();
     }
 
+    //login
+    async findByUsuario(usuario: string): Promise<Usuarios | null> {
+        return this.prisma.usuarios.findFirst({
+          where: { usuario },
+        });
+    }
+
 }
