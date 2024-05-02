@@ -22,9 +22,14 @@ export class CasosService {
   }
 
   async update(id: number, data: Prisma.CasosCreateInput): Promise<Casos> {
+    const currentDate = new Date();
+    const nuevoCasoData: Prisma.CasosCreateInput = {
+      ...data,
+      fecha: currentDate, // Agregar la fecha y hora actual al objeto de datos
+    };
     return this.prisma.casos.update({
       where: { id },
-      data,
+      data: nuevoCasoData,
     });
   }
 
