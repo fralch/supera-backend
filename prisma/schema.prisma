@@ -37,9 +37,9 @@ model Casos {
   proceso String?
   mesa  String
   contrato String
-  acto_procesal  String?
+  acto_procesal  String? @db.VarChar(2000)
   culminado Int
   fecha  DateTime
-
+  tiempo Json?  
 
 }
