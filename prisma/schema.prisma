@@ -4,8 +4,9 @@
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
-
 // npx prisma migrate dev --name init
+// npx prisma generate // para ver las nuevas columnas insertadas desde mysql
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -16,10 +17,10 @@ datasource db {
 }
 
 model Usuarios {
-  id        Int      @id @default(autoincrement())
-  dni       Int   @unique
-  usuario   String 
-  clave    String
+  id        Int     @id @default(autoincrement())
+  dni       Int     @unique
+  usuario   String
+  clave     String
   nombre    String
   celular   String
   correo    String?
@@ -27,19 +28,19 @@ model Usuarios {
 }
 
 model Casos {
-  id        Int      @id @default(autoincrement())
-  cliente   String
-  condicion String?
-  celular  String
-  expediente String? 
-  fiscal   String?
-  materia String
-  proceso String?
-  mesa  String
-  contrato String
-  acto_procesal  String? @db.VarChar(2000)
-  culminado Int
-  fecha  DateTime
-  tiempo Json?  
-
+  id            Int      @id @default(autoincrement())
+  cliente       String
+  condicion     String?
+  celular       String
+  expediente    String?
+  fiscal        String?
+  materia       String
+  proceso       String?
+  mesa          String
+  contrato      String
+  acto_procesal String?  @db.VarChar(2000)
+  culminado     Int
+  fecha         DateTime
+  tiempo        Json?
+  usuarios_dni  Json?
 }
