@@ -17,8 +17,8 @@ datasource db {
 }
 
 model Usuarios {
-  id         Int                  @id @default(autoincrement())
-  dni        Int                  @unique
+  id         Int             @id @default(autoincrement())
+  dni        Int             @unique
   usuario    String
   clave      String
   nombre     String
@@ -27,34 +27,36 @@ model Usuarios {
   direccion  String?
   cargo      String
   estado     Int
-  created_at DateTime             @default(now())
-  updated_at DateTime             @updatedAt
-  casos      CasosColaboradores[]
+  created_at DateTime        @default(now())
+  updated_at DateTime        @updatedAt
+  casos      CasosUsuarios[]
 
   @@unique([usuario, dni])
 }
 
 model Casos {
-  id            Int                  @id @default(autoincrement())
-  cliente       String
-  condicion     String?
-  celular       String
+  id            Int             @id @default(autoincrement())
+  cliente_dni   Int
+  condiciones   String?
   expediente    String?
   fiscal        String?
   materia       String
   proceso       String?
   mesa          String
   contrato      String
-  acto_procesal String?              @db.VarChar(2000)
+  acto_procesal String?         @db.VarChar(2000)
   culminado     Int
   fecha         DateTime
   tiempo        Json?
   usuarios_dni  Json?
   pagos         Pagos[]
-  colaborador   CasosColaboradores[]
+  colaborador   CasosUsuarios[]
+  created_at    DateTime        @default(now())
+
+  cliente Clientes @relation(fields: [cliente_dni], references: [dni])
 }
 
-model CasosColaboradores {
+model CasosUsuarios {
   id              Int      @id @default(autoincrement())
   caso_id         Int
   colaborador_dni Int
@@ -64,6 +66,21 @@ model CasosColaboradores {
   usuario Usuarios @relation(fields: [colaborador_dni], references: [dni])
 
   @@unique([caso_id, colaborador_dni])
+}
+
+model Clientes {
+  id         Int      @id @default(autoincrement())
+  dni        Int      @unique
+  nombre     String
+  celular    String
+  correo     String?
+  direccion  String?
+  condicion  String?
+  estado     Int
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  casos Casos[]
 }
 
 model Pagos {
