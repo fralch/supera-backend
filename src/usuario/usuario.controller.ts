@@ -17,7 +17,8 @@ export class UsuarioController {
     }
 
     @Post('login')
-    async login(@Body() data: {usuario: string, clave: string}): Promise<Usuarios | null> {
+    async login(@Body() data: {usuario: string, clave: string}) {
+        // return data; 
         const usuario = await this.usuarioService.findByUsuario(data.usuario);
         if(usuario && usuario.clave === data.clave) {
             return usuario;

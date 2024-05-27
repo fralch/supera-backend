@@ -17,18 +17,25 @@ datasource db {
 }
 
 model Usuarios {
-  id        Int     @id @default(autoincrement())
-  dni       Int     @unique
-  usuario   String
-  clave     String
-  nombre    String
-  celular   String
-  correo    String?
-  direccion String?
+  id         Int                  @id @default(autoincrement())
+  dni        Int                  @unique
+  usuario    String
+  clave      String
+  nombre     String
+  celular    String
+  correo     String?
+  direccion  String?
+  cargo      String
+  estado     Int
+  created_at DateTime             @default(now())
+  updated_at DateTime             @updatedAt
+  casos      CasosColaboradores[]
+
+  @@unique([usuario, dni])
 }
 
 model Casos {
-  id            Int      @id @default(autoincrement())
+  id            Int                  @id @default(autoincrement())
   cliente       String
   condicion     String?
   celular       String
@@ -38,9 +45,38 @@ model Casos {
   proceso       String?
   mesa          String
   contrato      String
-  acto_procesal String?  @db.VarChar(2000)
+  acto_procesal String?              @db.VarChar(2000)
   culminado     Int
   fecha         DateTime
   tiempo        Json?
   usuarios_dni  Json?
+  pagos         Pagos[]
+  colaborador   CasosColaboradores[]
+}
+
+model CasosColaboradores {
+  id              Int      @id @default(autoincrement())
+  caso_id         Int
+  colaborador_dni Int
+  created_at      DateTime @default(now())
+
+  caso    Casos    @relation(fields: [caso_id], references: [id])
+  usuario Usuarios @relation(fields: [colaborador_dni], references: [dni])
+
+  @@unique([caso_id, colaborador_dni])
+}
+
+model Pagos {
+  id             Int      @id @default(autoincrement())
+  caso_id        Int
+  monto          Float
+  fecha_pago     DateTime
+  descripcion    String?
+  metodo_pago    String?
+  monto_total    Float
+  saldo_restante Float
+  estado         String
+  created_at     DateTime @default(now())
+
+  caso Casos @relation(fields: [caso_id], references: [id])
 }
