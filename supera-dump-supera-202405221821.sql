@@ -1,4 +1,4 @@
-INSERT INTO casos  (cliente_dni, condiciones, expediente, fiscal, materia, proceso, mesa, contrato, acto_procesal, culminado, fecha, tiempo, usuarios_dni, pagos, colaborador)
+INSERT INTO casos  (cliente_dni, condiciones, expediente, fiscal, materia, proceso, mesa, contrato, acto_procesal, culminado, fecha, tiempo, usuarios_dni)
 VALUES 
   (
     1, 'DEMANDADO', 
@@ -1007,16 +1007,14 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    768, 'WALDA LAZO MOSQUERA', 'IMPUTADA', 
-    '964252839', 'CARPETA 999-2021', 
+    116,  'IMPUTADA',  'CARPETA 999-2021', 
     'KATERINE GUERRERO RUIZ', 'USURPACION AGRAVADA', 
     'COMUN', 'Penal', 'NO TIENE', '1. ELEVACION DE ACTUADOS; 2. DISPOSICION DE CONLUSION DE INV. PREPARATORIA; 3. ESPERAR PRONUNCIAMIENTO', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    769, 'WALDA LAZO MOSQUERA', 'AGRAVIADA', 
-    '964252839', 'CARPETA 226-2023', 
+    116,  'AGRAVIADA',  'CARPETA 226-2023', 
     'ESTHER DE LA CRUZ SANTOALLA', 
     'USURPACION', 'COMUN', 'Penal', 'NO TIENE', 
     '1. SE PRESENTO ELEVACION DE ACTUADOS; 2. SE DECLARÓ INFUNDADO; 3. SE PRESENTARÁ ACCION DE AMPARO', 
@@ -1024,16 +1022,14 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    770, 'MANUEL TAFUR TORRES', 'IMPUTADO', 
-    '957773666', 'CARPETA 25-2019', 
+    117, 'IMPUTADO',  'CARPETA 25-2019', 
     'BONNIE BAUTISTA CANTUTA', 'COHECHO ACTIVO ESPECIFICO', 
     'COMUN', 'Penal', 'NO TIENE', '1. SE PROGRAMA DECLARACIONES DE TESTIGOS; 2. SE ASISTE A LAS DECLARACIONES; 3. ESPERAR LA REPROGRAMACION', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    771, 'BRAYAN ANHONY DAVID CARDENAS', 
-    'IMPUTADO', '961542882', 'EXP. 414-2022', 
+    118, 'IMPUTADO', 'EXP. 414-2022', 
     'ESP. PEREZ PONCE JOSE ANTONIO', 
     'PROMOCION O FAVORECIMINETO AL TRAFICO DE DROGAS', 
     'COMUN', 'Penal', 'TIENE', '1. APERSONAMIENTO; 3. SOLICITUD DE VIDEOS', 
@@ -1041,8 +1037,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    772, 'GEAN MARCO GARCIA MENDOZA', 
-    'IMPUTADO', '913604599', 'EXP. 591-2023', 
+    119, 'IMPUTADO', 'EXP. 591-2023', 
     'ESP. MANTILLA DE LA CRUZ JOSE MIGUEL', 
     'AGRESIONES CONTRA LAS MUJERES', 
     'COMUN', 'Penal', 'NO TIENE', '1. AUDIENCIA DE JUICIO ORAL; 2. SOLICITUD PARA QUE SE REMITA LA SENTENCIA; 3. ACERCARCE AL JUZGADO PARA BUSCAR LA SENTENCIA', 
@@ -1050,8 +1045,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    773, 'GEAN MARCO GARCIA MENDOZA', 
-    'IMPUTADO', '913604599', 'EXP. 1421-2022', 
+    119, 'IMPUTADO',  'EXP. 1421-2022', 
     'ZUMAETA CLEMENTE JACKELINE STEFANI', 
     'AGRESIONES CONTRA LAS MUJERES', 
     'COMUN', 'Penal', 'NO TIENE', '1. SE PRESENTÓ LA SOLICITUD DE CONVERSION DE LA PENA; 2. AUDIENCIA DE CONTROL DE EJECUCION; 3. INTERPRETACION SITEMATICA Y TELEOLOGICA', 
@@ -1059,8 +1053,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    820, 'ROSARIO LOGOGIANO GRANADOS', 
-    'DEMANDANTE', '970120904', '00239-2022-0-1501-JR-LA-03', 
+    120, 'DEMANDANTE',  '00239-2022-0-1501-JR-LA-03', 
     'HUAROC POCOMUCHA NATALI ROXANA', 
     'LABORAL', 'ORDINARIO', 'Laboral', 
     'SI', 'Que, mediante resolución N°5, en razón al escrito de fecha 31 de Agosto del año en curso, presentado por la parte demandante , estando a lo antes expuesto, pidase un mejor estudio de autos, en tanto a las medidas cautelares luego de ser ejecutadas no sufren variaciones, salvo se trate de ingresar a la fase de ejecusión forzada en el proceso cautelado.', 
@@ -1068,16 +1061,14 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    821, 'ROSARIO LOGOGIANO GRANADOS', 
-    'DEMANDANTE', '970120904', '00239-2022-44-1501-JR-LA-03', 
+    120, 'DEMANDANTE', '00239-2022-44-1501-JR-LA-03', 
     'BARZOLA BARJA EDGAR RAUL', 'LABORAL-AUXILIO JUDICIAL', 
     'ORDINARIO', 'Laboral', 'SI', 'Que, mediante resolución N°1 de fecha 23 de enero del 2024, se concede auxilio judicial en forma total para la solicitante, en consecuencia exonerese de los pagos de tasas judiciales y cédulas de notificaciones, comuniquese a la unidad de servicios judiciales.', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    822, 'EMP. HUAYHUAY', 'DEMANDANDO', 
-    '957666450', '00191-2022-0-1510-JR-LA-01', 
+    121,  'DEMANDANDO',  '00191-2022-0-1510-JR-LA-01', 
     'PARIONA ESPINOZA VICTOR RAUL', 
     'LABORAL', 'ABREVIADO', 'Laboral', 
     'SUSCRIPCIÓN', 'Que, mediante escrito presentado el 9 de enero del 2024, se interpuso recurso de apelación.', 
@@ -1085,8 +1076,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    823, 'EMP. HUAYHUAY', 'DEMANDADO ', 
-    '957666450', '00191-2022-74-1510-JR-LA-01', 
+    121,  'DEMANDADO ',  '00191-2022-74-1510-JR-LA-01', 
     'PARIONA ESPINOZA VICTOR RAUL', 
     'LABORAL-MEDIDA CAUTELAR', 'ABREVIADO', 
     'Laboral', 'SUSCRIPCIÓN', 'Que, mediante resolución N°3, al escrito presentado por la entidad demandada con fecha 16 de Noviembre, en curso, tengase por cumplido lo requerido en la resolución N° 2.', 
@@ -1094,8 +1084,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    824, 'EMP. HUAYHUAY', 'DEMANDADO', 
-    '957666450', '00103-2022-0-1510-JR-LA-01', 
+    121,  'DEMANDADO',  '00103-2022-0-1510-JR-LA-01', 
     'PARIONA ESPINOZA VICTOR RAUL', 
     'LABORAL', 'ORDINARIO', 'Laboral', 
     'SUSCRIPCIÓN', 'Que, mediante resolución s/n de fecha 1 de junio del 2023, refiere CONCILIACION - AUDIENCIA DE CONCILIACION ESTADO :CONCLUIDA', 
@@ -1103,8 +1092,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    825, 'YOSMEL CAPCHA MEZA', 'DEMANDANTE', 
-    '916490096', '04630-2021-0-1801-JR-LA-18', 
+    122,  'DEMANDANTE', '04630-2021-0-1801-JR-LA-18', 
     'PALA ALVARADO ESTEFANI DEL PILAR - TRAM', 
     'LABORAL', 'ORDINARIO', 'Laboral', 
     'SI', 'Que, mediante resolución N° 10 de fecha 30 de enero del 2024, se declara infundada el recurso de nulidad interpuesto por la parte demandante contra la resolución N° 09 de fecha 09/11/2023, por tanto prosigase el proceso conforme a su estado actual y declarese consentida la resolución N°9.', 
@@ -1112,8 +1100,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    826, 'EMP. HUAYHUAY', 'DEMANDADO', 
-    '957666450', '00020-2022-0-1510-JR-LA-01', 
+    121,  'DEMANDADO',  '00020-2022-0-1510-JR-LA-01', 
     'PARIONA ESPINOZA VICTOR RAUL', 
     'LABORAL', 'ORDINARIO', 'Laboral', 
     'SUSCRIPCIÓN', 'Que, mediante escrito de fecha 15 de enero del 2024, la parte demandante adjunta reporte de banco.', 
@@ -1121,8 +1108,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    827, 'EMP. HUAYHUAY', 'DEMANDADO', 
-    '957666450', '00081-2018-0-1510-JM-LA-01', 
+    121, 'DEMANDADO',  '00081-2018-0-1510-JM-LA-01', 
     'PARIONA ESPINOZA VICTOR RAUL', 
     'LABORAL', 'ABREVIADO', 'Laboral', 
     'SUSCRIPCIÓN', 'Que, mediante resolución N° 25 de fecha 11 de noviembre del 2023, se efectivice apercebimiento y otros.', 
@@ -1130,16 +1116,14 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    828, 'NEDER CANO SAMANIEGO', 'DEMANDANTE', 
-    '964015229', '00801-2016-41-1512-JP-CO-01', 
+    123,  'DEMANDANTE',  '00801-2016-41-1512-JP-CO-01', 
     '', 'COMERCIAL', '', 'Laboral', 'NO', 
     'Que, mediante escrito de fecha 19 de enero del 2024, se presento escrito de cumplo mandato. ', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    829, ' GERALDINE ORELLANA BOCANEGRA', 
-    'DEMANDADO', '935434803', '00134-2023-0-1501-JR-FC-02', 
+    124, 'DEMANDADO', '00134-2023-0-1501-JR-FC-02', 
     'MATIAS HINOSTROZA CARLOS GREGORIO', 
     'FAMILIA', 'CONOCIMIENTO', 'Laboral', 
     'SI', 'Que, mediante resolución N° 07 de fecha 31 de enero del 2024, a lo expuesto y con los anexos presentados a través de la mesa de partes electrónica, téngase por cumplido con el requerimiento efectuado por el juzgado con la resolución número seis; en consecuencia, a los autos y téngase presente; exhortando al abogado que autoriza el escrito a fin de que en lo sucesivo cumpla con presentar los escritos con firma de la demandada.', 
@@ -1147,8 +1131,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    830, 'BRYAN ARTURO ARRIETA VERASTEGUI', 
-    'DEMANDANTE', '934292796', '00326-2023-0-1501-JR-CI-02', 
+    125, 'DEMANDANTE',  '00326-2023-0-1501-JR-CI-02', 
     'ADAUTO CARRION KARINA MARILU', 
     'CIVIL', 'NO CONTENCIOSO', 'Laboral', 
     'NO', 'Que, mediante resolución N° 08 de fecha 30 de enero del 2024, al escrito presentado Bryan Arturo Arrieta Verástegui: NOTIFIQUESE al codemandado Teodoro Arrieta Díaz mediante\r\nedictos, con la finalidad de que pueda contestar la demanda, bajo apercebimiento a nombrarse curador procesal.\r\n\r\n', 
@@ -1156,16 +1139,14 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    831, 'GARAY QUISPE MELISSA ROXANA', 
-    'DEMANDANTE', '964377022', '00088-2018-0-1501-JR-LA-03', 
+    126, 'DEMANDANTE', '00088-2018-0-1501-JR-LA-03', 
     'ROSALES BARZOLA YESSICA', 'LABORAL', 
     'ABREVIADO', 'Laboral', 'SI', 'Que, mediante escrito de fecha 10 de enero del 2024, se solicita que se ordene el incio de la ejecusión forzada de embargo en forme de retención.', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    832, 'EMP. HUAYHUAY', 'DEMANDADO', 
-    '957666450', '00268-2023-0-1510-JP-LA-01', 
+    121,  'DEMANDADO',  '00268-2023-0-1510-JP-LA-01', 
     'BASTIDAS SAMANIEGO ATICO', 'LABORAL', 
     'EJECUCION', 'Laboral', 'SUSCRIPCIÓN', 
     'Se presento escrito  de contradicción de fecha 26 octubre del 2023, debido a la resolución N°1  emitida el 22 de setiembre del 2023.', 
@@ -1173,8 +1154,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    833, 'EMP. HUAYHUAY', 'DEMANDADO', 
-    '957666450', '00282-2023-0-1510-JP-LA-01', 
+    121, 'DEMANDADO',  '00282-2023-0-1510-JP-LA-01', 
     'ALLPOC ESPIRITU DENISSE MARGOT', 
     'LABORAL', 'EJECUCION', 'Laboral', 
     'SUSCRIPCIÓN', 'Se presento escrito de fecha 26 de octubre del 2023, en donde se formula contradicción, debido a la resolución N°1 de fecha 22 de noviembre del 2023.', 
@@ -1182,8 +1162,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    834, 'ROJAS VILLALVA LIZBETH', 'DEMANDANTE', 
-    '', '01043-2022-0-1501-JR-LA-04', 
+    127,  'DEMANDANTE',  '01043-2022-0-1501-JR-LA-04', 
     'ORTIZ DE VILLATE CARBAJAL RAUL ALBERT', 
     'LABORAL', 'EJECUCION', 'Laboral', 
     'SI', 'Se presento escrito de fecha 28 de noviembre del 2023, solicitando ejecusión de sentencia.', 
@@ -1191,24 +1170,21 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    835, 'ARTEAGA MELENDEZ KHATERINE', 
-    'DEMANDANTE', '950555522', '01788-2023-0-1501-JR-LA-02', 
+    128, 'DEMANDANTE', '01788-2023-0-1501-JR-LA-02', 
     'PEREZ JUZCAMAITA EDITH', 'LABORAL', 
     'ABREVIADO', 'Laboral', 'NO', 'El recurso de casación se envio fuera de cede ,de fecha 18 de enero del 2024.', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    836, 'ARTURO HERNAN CAPCHA MEZA', 
-    'DEMANDANTE', '939358124', '02652-2022-0-1501-JR-LA-03', 
+    129, 'DEMANDANTE', '02652-2022-0-1501-JR-LA-03', 
     'LEON OSCANOA GUSTAVO TITO', 'LABORAL', 
     'ORDINARIO', 'Laboral', 'SI', 'Que, mediante resolución N°12, al escrito de fecha 24 de agosto del año en curso presentado por el Procurador Publico de la Municipalidad Distrital de El Tambo, mediante el cual cumplimiento de lo dispuesto en la resolución once cumple con aclarar adjuntando el listado de sentencias judicial en calidad de cosa juzgada en ejecución, en consecuencia, a conocimiento de la parte demandante para los fines pertinentes.', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    837, 'ARTURO HERNAN CAPCHA MEZA', 
-    'DEMANDANTE', '939358124', '01392-2018-0-1501-JR-LA-02', 
+    129, 'DEMANDANTE', '01392-2018-0-1501-JR-LA-02', 
     'DURANT AVILA FRANK MAX AUGUSTO', 
     'LABORAL', 'ORDINARIO', 'Laboral', 
     'SI', 'Que, mediante resolución N° 33, declara fundada a la observación de pago contenido en la resolución de gerencia municipal, Nro. 446-2023-mdt/gm de fecha 22/09/2023, efectuada por la parte demandante. Asimismo, requerir a don JULIO CESAR LLALLICO COLCA, en su condición de alcaldede la MUNICIPALIDAD DISTRITAL DE EL TAMBO, cumpla con\r\nREFORMULAR el CRONOGRAMA DE PAGO a cargo de la MUNICIPALIDAD\r\nDISTRITAL DE EL TAMBO, conforme lo descrito en los considerandos sexto al noveno de la presente resolución, respecto a los costos del proceso por S/ 2,625.00\r\nSoles, debiendo reformularse de la forma siguiente: 1 cuota de S/ 2,625.00 en el MES\r\nDE JULIO DE 2024; debiendo PRESENTAR la RESOLUCIÓN\r\nINSTITUCIONAL que lo contiene.requerir', 
@@ -1216,8 +1192,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    838, 'EMP. CAJA HUANCAYO', 'DEMANDANTE', 
-    '957567567', '01597-2021-0-3207-JR-LA-03', 
+    130,  'DEMANDANTE',  '01597-2021-0-3207-JR-LA-03', 
     'VILCAPOMA CAMARENA DIEGO HUMBERTO', 
     'LABORAL', 'ORDINARIO', 'Laboral', 
     'SUSCRIPCIÓN', 'Que, mediante escrito de fecha 19 de enero del 2024, el expediente se ncuentra en sede laboral.', 
@@ -1225,8 +1200,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    839, 'EMP. CAJA HUANCAYO', 'DEMANDANTE', 
-    '957567567', '11515-2021-0-1801-JR-LA-18', 
+    130, 'DEMANDANTE',  '11515-2021-0-1801-JR-LA-18', 
     'EMP. CAJA HUANCAYO', 'LABORAL', 
     'ORDINARIO', 'Laboral', 'SUSCRIPCIÓN', 
     'Que, mediante resolución s/n de fecha 4 de diciembre del 2023, se cita a las partes procesales para el desarrollo de la continuación de audiencia de juzgamiento a llevarse a cabo el día 10 DE JUNIO DEL 2024, A LAS 8:20 DE LA MAÑANA.', 
@@ -1234,23 +1208,20 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    840, 'GARAY PORRRAS JOSÉ LUIS', 
-    'DEMANDANTE', '915168953', '00110-2022-0-1501-JP-CI-03', 
+    131, 'DEMANDANTE', '00110-2022-0-1501-JP-CI-03', 
     'LEON OSCANOA GUSTAVO TITO', 'LABORAL', 
     'ORDINARIO', 'Laboral', 'SI', 'Que medinate escrito de fecha 1 de febrero del 2024, presentado por la parte demandada, cumple mandato en renovar carta fianza  por el importe de  S/ 68,135.57 soles.                          Que, mediante resolución N°19, se requiere  a la parte demandada para que en el término de CINCO DÍAS HÁBILES con renovar la carta fianza por el importe de S/ 68,135.57 soles, bajo apercibimiento de en cuenta su conducta procesal al momento de emitir la resolución correspondiente en caso de incumplimiento.', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    841, 'GARAY PORRRAS JOSÉ LUIS', 
-    'RECURRENTE', '915168953', '23643-2023 (CASACIÓN)', 
+    131, 'RECURRENTE', '23643-2023 (CASACIÓN)', 
     '', 'LABORAL', 'CASACIÓN LABORAL', 
     'Laboral', 'SI', '', 0, '2024-05-01 00:00:00.000', 
     NULL, '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    842, 'MEZA CARHUANCHO JOSE DANIEL', 
-    'DEMANDANTE', '955831935', '00014-2022-0-3202-JR-LA-01', 
+    132, 'DEMANDANTE', '00014-2022-0-3202-JR-LA-01', 
     'BENDEZU CARHUAMACA IVONNE VANESSA', 
     'LABORAL', 'ORDINARIO', 'Laboral', 
     'SI', 'Que, mediante resolución s/n de fecha 26 de enero del 2024, se remite el expediente en atención a lo ordenado mediante resolución número once.', 
@@ -1258,8 +1229,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    843, 'MEZA CARHUANCHO JOSE DANIEL', 
-    'DEMANDADO', '955831935', '00204-2022-0-1501-JP-FC-01', 
+    132, 'DEMANDADO', '00204-2022-0-1501-JP-FC-01', 
     'RONDAN TOLEDO NOEMI TEOFILA', 
     'LABORAL', 'UNICO', 'Laboral', 'CANCELADO - CERRADO', 
     'Que, mediante resolución N° 3 de fecha 12 de junio del 2023, se declara consentida la resolución N° 2 de fecha 19 de abril del 2023 (fs.40-41), em consecuencia archivese definitivamente los actuados, remitiendose al archivo central de esta sede judicial.                                                                              Que medinate escrito de fecha 11 de julio del 2023, se remite el expediente al archivo general , el expediente senevio fuera de la sede a archivo.', 
@@ -1267,8 +1237,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    844, 'KELI CORDOVA DELGADO', 'DEMANDANTE', 
-    '970308600', '00031-2022-0-2901-JR-LA-01', 
+    54,  'DEMANDANTE',  '00031-2022-0-2901-JR-LA-01', 
     'CAMPOS POMA JACKELINE FIORELLA', 
     'LABORAL', 'ORDINARIO', 'Laboral', 
     'SI', 'Que, mediante resolución s/n de fecha 18 de diciembre del 2023, se emite acta de audiencia de vista.', 
@@ -1276,15 +1245,13 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    845, 'MARIA LUZMILLA POMA', 'RECURRENTE', 
-    '988833582', '43065-2022\r\n(CASACIÓN) \r\n', 
+    133, 'RECURRENTE',  '43065-2022\r\n(CASACIÓN) \r\n', 
     '-', 'LABORAL', '0', 'Laboral', 'NO', 
     '', 0, '2024-05-01 00:00:00.000', 
     NULL, '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    846, 'EMP. MERCURIO S.A.C', 'DEMANDADO', 
-    '988199545', '00272-2017-1505-JR-LA-01', 
+    134, 'DEMANDADO',  '00272-2017-1505-JR-LA-01', 
     'FLORES ARIAS LUIS ENRIQUE', 'LABORAL', 
     'ORDINARIO', 'Laboral', 'SUSCRIPCIÓN', 
     'Que, mediante resolución N° 33, se resuelve dejar sin efecto el mandato de archivo definitivo ordenado en la resolución  N°17 de fecha 13 de agosto del 2019, se declara consentida la resolución N° 20 de fecha 20 de enero del 2023, expidase a las partes judiciales para su inscripción el registro respectivo para cuyo fin oficiese para quién corresponda, el mismo que debera de ser diligenciado por el director bajo su responsabilidad.', 
@@ -1292,15 +1259,13 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    847, 'ROCIO LEDESMA LAURA', 'DENUNCIANTE', 
-    '988199545', '2516-2022/CC1', '', 
+    95,  'DENUNCIANTE', '2516-2022/CC1', '', 
     'INDECOPI / DENUNCIA', '', 'Laboral', 
     'SUSCRIPCIÓN', '', 0, '2024-05-01 00:00:00.000', 
     NULL, '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    848, 'DALILA SOLEDAD DE LOS RIOS ARCE', 
-    'DEMANDANTE', '922257630', '02130-2023-0-1501-JR-LA-02', 
+    135, 'DEMANDANTE',  '02130-2023-0-1501-JR-LA-02', 
     'SANTIVAÑEZ CASTILLO DORIS MARGOT', 
     'LABORAL', 'URGENTE', 'Laboral', 
     'SI', 'Que, mediante escrito de fecha 19 de octubre del 2023, se remite autos en la ofina de pericia/ el expediente se envio fuera de la sede de pericia.', 
@@ -1308,16 +1273,14 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    849, 'JESÚS DE MENESES JULIA YOLANDA', 
-    'DEMANDANTE', '995888222', '01006-2019-0-1501-JR-LA-01', 
+    136, 'DEMANDANTE',  '01006-2019-0-1501-JR-LA-01', 
     'MAYTA CASTRO GINA NOEMI', 'LABORAL', 
     'URGENTE', 'Laboral', 'NO', 'Que, mediante resolución Nº 14 de fecha 21 de diciembre del 2023, atendiendo al escrito de fecha 9 de noviembre del 2023, estese en constancia la recepción de las copias certificadas de fecha 10 de noviembre del 2023 que obra en la copia del escrito, el mismo que debe de ser agregado al expediente. Asimismo, al escrito virtual de fecha 16 de noviembre del 2023 presentado por la demandante. AL PRINCIPAL: TÉNGASE presente y AGREGUESE a los autos el documento de trámite que adjunta en su escrito, asi también SE DEBE NOTIFICAR en la forma y modo con el contenido de la resolución trece al señor Walter Raúl Oré Ramos .', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    850, 'VILA MATOS TARCILA', 'DEMANDANTE', 
-    '964826644', '00252-2016-0-1501-JR-LA-01', 
+    137,  'DEMANDANTE',  '00252-2016-0-1501-JR-LA-01', 
     'ORTIZ DE VILLATE CARBAJAL RAUL ALBERT', 
     'LABORAL', 'URGENTE', 'Laboral', 
     'NO', 'Que, mediante reosolución Nº 22 de fecha 20 de dicimebre del 2023, se atiende al escrito presentado por la parte demandante de fecha 9 de noviembre del 2023, en razón a lo solicitado; expidase las  copias certificadas, para lo cual se  solicita que se apersone al modula para la coordinación y entrega de las copias. Asimismo al escrito presentado por el demadante de fechas 27/09 y 14/11 del 2023, por recibido los autos y a conocimiento expreso de las partes procesales.', 
@@ -1325,17 +1288,14 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    851, 'POMAHUALI PIÑAS MARISOL Y JACINTO', 
-    'DEMANDANTE', '989520254- 912115799', 
-    '00082-2019-0-1502-JM-LA-01', 'CRISOSTOMO LLALLICO ROBERTO CARLOS', 
+    138, 'DEMANDANTE','00082-2019-0-1502-JM-LA-01', 'CRISOSTOMO LLALLICO ROBERTO CARLOS', 
     'LABORAL', 'URGENTE', 'Laboral', 
     'SI', 'Que, mediante resolución Nº 15 de fecha 29 de noviembre del 2023, se atiende el escrito presentado por el demandante JACINTO CONTRERAS MALPICA de fecha 28 de noviembre del 2023, en razón a lo solicitado expidase las copias certificadas que solicita dejando constancia en autos de su entrega. ', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    852, 'MELGAR ZAMUDIO HERBERT', 'DEMANDANTE', 
-    '938337884', '01013-2014-0-1501-JR-LA-01', 
+    139, 'DEMANDANTE',  '01013-2014-0-1501-JR-LA-01', 
     'SANTIVAÑEZ CASTILLO DORIS MARGOT', 
     'LABORAL', 'URGENTE', 'Laboral', 
     'NO', 'Que, mediante resolución N° 11 de fecha 29 de setiembre del 2023, en razón al escrito presnetado de fecha 10 de julio del 2023, por la parte demandante, tengase present el acompañamiento de copias', 
@@ -1343,8 +1303,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    853, 'GALVAN GUAYTA ESTHER', 'DEMANDANTE', 
-    '938337884', '03365-2019-0-1501-JR-LA-01', 
+    140,  'DEMANDANTE',  '03365-2019-0-1501-JR-LA-01', 
     'SANTIVAÑEZ CASTILLO DORIS MARGOT', 
     'LABORAL', 'URGENTE', 'Laboral', 
     'NO', 'Que, mediante resolución Nº 15 de fecha 6 de diciembre del 2023, se da cuenta que el escrito de fecha de ingreso 14 de novimbre del 2023 presentado por el demandante, estando a que esta parte procesal presente el cargo del tramite efectuado ante la Mesa de Partes del Gobierno Regional de Junin de fecha 14 de noviembre de 2023 a fin de la inscripción de la sentencia en el MEF.', 
@@ -1352,8 +1311,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    854, 'GALVAN HUAYTA HILDA', 'DEMANDANTE', 
-    '944450637', '00760-2014-0-1501-JR-LA-01', 
+    141,  'DEMANDANTE',  '00760-2014-0-1501-JR-LA-01', 
     'PICHILINGUE VELAZCO RICARDO DANY', 
     'LABORAL', 'URGENTE', 'Laboral', 
     'NO', 'Que, mediante resolución s/n  de fecha 10 de julio 2023, se devuelve el Exp. 760-2014-\r\n0-1501-JR-LA-01, a fojas (172), en los autos seguidos por HILDA GALVAN HUAYTALLA contra\r\nla UGEL DE HUANCAYO sobre Acción Contenciosa Administrativa, -Ubicado en el\r\nPAQUETE (12).', 
@@ -1361,8 +1319,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    855, 'VILA MATOS TARCILA', 'DEMANDANTE', 
-    '964826644', '00049-2022-0-1501-JR-LA-04', 
+    137,  'DEMANDANTE',  '00049-2022-0-1501-JR-LA-04', 
     'PICHILINGUE VELAZCO RICARDO DANY', 
     'LABORAL', 'URGENTE', 'Laboral', 
     'NO', 'Que mediante escrito de fecha 10 de noviembre del 2023,  se indica que se remita el expediente a la oficina de pericias, adjunte boletas de pago cocidas / el expediente se envio fuerta de la sede de pericias.                                                                                                                                                          Que, mediante resolución N° 11 de fecha 3 de noviembre del 2023,  en razón al escrito de fecha 26 de setiembre del 2023, presentado por la demandante, a lo expuesto, tengase por presentado las copias de boletas de pago y agrese a autos en consecuencia siendo a su estado REMITASE el expediente a la Oficina de Pericias de esta Superior Corte a fin de que se emita el informe pericial correspondiente, conforme lo resuelto en la sentencia de autos', 
@@ -1370,8 +1327,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    856, 'EMP. GRUPO GRANDE S.A.C', '', 
-    '964307133', 'HOJA DE RUTA Nº2646-2017\r\n', 
+    142,  '',  'HOJA DE RUTA Nº2646-2017\r\n', 
     'SUNAFIL', 'REQUERIMIENTO DE PAGO-SUNAFIL', 
     'ADMINISTRATIVO', 'Laboral', 'PAGO CANCELADO', 
     'Se presento recurso de apelación, debido a la resolución que declara infundada el requerimiento.', 
@@ -1379,8 +1335,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    857, 'KATHERINE HUANAY BENDEZU', 
-    'RECURRENTE', '996459914', 'DOC.07463757\r\nEXP.05132373\r\n', 
+    143, 'RECURRENTE', 'DOC.07463757\r\nEXP.05132373\r\n', 
     'JOHNY DERIAN CASTRO RODRIGUEZ', 
     'ADMINISTRATIVO', 'ADMINISTRATIVO', 
     'Laboral', 'PAGO CANCELADO', 'De fecha 22 de enero del 2024, el expediente se encuentra en la oficina de recurso humanos -UESCH.', 
@@ -1388,8 +1343,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    858, 'ARZAPALO MARTICONERA LIZETTE', 
-    'DEMANDANTE', '993290390', '002729-2023-0-1501-JR-LA-03', 
+    144, 'DEMANDANTE', '002729-2023-0-1501-JR-LA-03', 
     'DE LA CRUZ GUTIERREZ DEYSI NOELIA', 
     'LABORAL', 'ABREVIADO', 'Laboral', 
     'NO', 'Que, mediante resolución Nº 12 de fecha 30 de enero del 2024, en razón al escrito por la parte demandante ARZAPALO MARTICONERA LIZETTE, se indica que el presente proceso se rige al principio de oralidad y estese a lo ordenado en la resolución número once de autos.                                                                                                                    Que, mediante resolución Nº 11 de fecha 29 de enero del 2024, cumplace con lo ordenado en la Sentencia de Vista Nº 948- 2023, con conocmiento de las partes procesales, sobre la bajada de autos. Y siendo su estado procesal INGRESEN autos a despacho para EMITIR NUEVA SENTENCIA, la misma que se dará a conocer el día 05 DE MARZO DEL AÑO DOS MIL VEINTICUATRO.', 
@@ -1397,8 +1351,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    859, 'VILA MATOS TARCILA', 'DEMANDADO (APODERADO)', 
-    '964377022', '00786-2022-0-1101-JP-CI-01', 
+    137, 'DEMANDADO (APODERADO)',  '00786-2022-0-1101-JP-CI-01', 
     'QUISPE CLEMENTE MARCO ANTONIO', 
     'CIVIL', 'SUMARISIMO', 'Laboral', 
     'NO', 'Que, mediante resolución N° 5  de fecha 15 de diciembre del 2023, remitase nueva notificación destinada para la demandada Rosalinda Espiritu Condezo, con la copuia de auto admisorio, demanda  y anexos, dirigida a dirección consiganda en la ficha de RENIEC, con la finalidad de ejercer su derecho a la defensa.', 
@@ -1406,16 +1359,14 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    860, 'PABLO CENTENO SEDANO', 'DEMANDANTE', 
-    '965666069', '04502-2022-0-1801-JR-LA-07', 
+    145, 'DEMANDANTE',  '04502-2022-0-1801-JR-LA-07', 
     'ARIAS CAYCHO ROSA MARIA', 'LABORAL', 
     'ORDINARIO', 'Laboral', 'SI', 'Que, mediante escrito de fecha 30 octubre del 2023, se presento el escrito de cumplo mandato.', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    861, 'COLEGIOS PRAXIS', 'DENUNCIADOS', 
-    '985694742', '0299-2023/CPC-INDECOPI-JUN', 
+    146,  'DENUNCIADOS',  '0299-2023/CPC-INDECOPI-JUN', 
     'KARINA ALVARADO VILLAVERDE', 'ADMINISTRATIVO', 
     'ADMINISTRATIVO CONTENCIOSO', 'Laboral', 
     'SUSCRIPCIÓN', 'Que de fecha 2 de febrero del 2024, se presenta un escrito con la finalidad de aclarar sobre los errores de tipeo en razón al nombre de la empresa.', 
@@ -1423,71 +1374,62 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    862, 'JOSE LAGUNAS ALVARADO', 'ADMINISTRADO', 
-    '968884572', 'N° 0018209', '-', 
+    147,  'ADMINISTRADO',  'N° 0018209', '-', 
     'ADMINISTRATIVO', 'ADMINISTRATIVO', 
     'Laboral', 'SI', 'ARCHIVADO CON SENTENCIA DE SERVIR', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    863, 'CUBA CASO PABLO JULIO', 'ADMINISTRADO', 
-    '956111417', 'S.E', '-', 'ADMINISTRATIVO', 
+    148,  'ADMINISTRADO',  'S.E', '-', 'ADMINISTRATIVO', 
     'ADMINISTRATIVO', 'Laboral', 'SI', 
     'Se obtuvo la información completa de AFP', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    864, 'EMILIANO MARCHAL PORRAS ROJAS', 
-    'ADMINISTRADO', '937015952', 'S.E', 
+    149, 'ADMINISTRADO', 'S.E', 
     '-', 'ADMINISTRATIVO', 'ADMINISTRATIVO', 
     'Laboral', 'NO', 'Se vario su domicilio procesal                                                                                                                                                       Que se notifique la resolución al domicilio señalado anteriormente', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    865, 'RAMOS RAVICHAGUA ELMO ANATACHO', 
-    'ADMINISTRADO', '956852429', 'S.E', 
+    150, 'ADMINISTRADO', 'S.E', 
     '-', 'ADMINISTRATIVO', 'ADMINISTRATIVO', 
     'Laboral', 'SI', 'Se esta esperando el informe de la papeleta', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    866, 'FERNANDEZ MEDINA CARMEN LUZ', 
-    'ADMINISTRADO', '945261587', '08-009-000424516', 
+    151, 'ADMINISTRADO','08-009-000424516', 
     '-', 'ADMINISTRATIVO', 'ADMINISTRATIVO', 
     'Laboral', 'NO', 'ESCRITO ÚNICO', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    867, 'VILLAZANA ALVAREZ LIDER', 'ADMINISTRADO', 
-    '989581405', 'S.E', '-', 'ADMINISTRATIVO', 
+    152,  'ADMINISTRADO',  'S.E', '-', 'ADMINISTRATIVO', 
     'ADMINISTRATIVO', 'Laboral', 'NO', 
     'ESCRITO ÚNICO', 0, '2024-05-01 00:00:00.000', 
     NULL, '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    868, 'EUTEMIA BIBIA VERASTEGUI DE LA CRUZ', 
-    'ADMINISTRADO', '962032117', 'S.E', 
+    153, 'ADMINISTRADO', 'S.E', 
     '-', 'ADMINISTRATIVO', 'ADMINISTRATIVO', 
     'Laboral', 'CONTRATO/ ARCHIVADO-PAGADO', 
     'ESCRITO ÚNICO', 0, '2024-05-01 00:00:00.000', 
     NULL, '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    869, 'GUZMAN DOMINGO OBISPO TAIPE', 
-    'ADMINISTRADO', '992107837', 'S.E', 
+    154, 'ADMINISTRADO', 'S.E', 
     '-', 'ADMINISTRATIVO', 'ADMINISTRATIVO', 
     'Laboral', 'CONTRATO/ ARCHIVADO-PAGADO', 
     'ESCRITO ÚNICO', 0, '2024-05-01 00:00:00.000', 
     NULL, '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    870, 'VALDEZ RODRIGUEZ NILO EDWIN', 
-    'DEMANDANTE', '931358124', '00146-2017-0-1510-JM-LA-01', 
+    155, 'DEMANDANTE', '00146-2017-0-1510-JM-LA-01', 
     'PARIONA ESPINOZA VICTOR RAUL', 
     'ADMINISTRATIVO', 'ORDINARIO', 'Laboral', 
     'SI', 'Se cumplió la sentencia del Poder Judicial', 
@@ -1495,23 +1437,20 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    871, 'VALDEZ RODRIGUEZ NILO EDWIN', 
-    'ADMINISTRADO', '931358124', '212-2020', 
+    155, 'ADMINISTRADO', '212-2020', 
     '-', 'ADMINISTRATIVO', 'ADMINISTRATIVO', 
     'Laboral', 'SI', 'Se cumplió con el otorgamiento de la pensión.', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    872, 'LOURDES CASIO GARCIA', 'DENUNCIANTE', 
-    '990936771', '36-2002/CRP-ODI-ULI-1-10', 
+    156,  'DENUNCIANTE',  '36-2002/CRP-ODI-ULI-1-10', 
     '-', 'ADMINISTRATIVO', 'ADMINISTRATIVO', 
     'Laboral', 'SI', '', 0, '2024-05-01 00:00:00.000', 
     NULL, '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    873, 'COMUNIDAD  CAMPESINA SAN LORENZO DE ALIS', 
-    '-', '955800656', '-', '-', 'Accion de amparo', 
+    157, '-',  '-', '-', 'Accion de amparo', 
     'EXPEDIENTE 00043-2022-0-0802-JM-CI-01', 
     'Empresa y Comunidades', 'Contrato por renovar ', 
     'Escrito de apersonamiento y subrogacion ', 
@@ -1519,8 +1458,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    874, 'COMUNIDAD  CAMPESINA SAN LORENZO DE ALIS', 
-    '-', '955800656', '-', '-', 'Accion de amparo', 
+    157, '-',  '-', '-', 'Accion de amparo', 
     'EXPEDIENTE N°:00044-2022-0-0802-JM-CI-01', 
     'Empresa y Comunidades', 'Contrato por renovar ', 
     'Escrito de apersonamiento y subrogacion', 
@@ -1528,15 +1466,14 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    875, 'COMUNIDAD  CAMPESINA SAN LORENZO DE ALIS', 
-    '-', '955800656', '-', '-', 'Tramite', 
+    157, '-',  '-', '-', 'Tramite', 
     'Certificacion de Libro de actas. ', 
     'Empresa y Comunidades', 'Contrato por renovar ', 
     'En proceso', 0, '2024-05-01 00:00:00.000', 
     NULL, '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    876, 'LEDESMA', '-', '988199545', '-', 
+    158,  '-', '-', 
     '-', 'falsificacion y uso de documento falso penal', 
     'Carpeta Fiscal N° 2460-2222 ', 
     'Empresa y Comunidades', 'Sin contrato', 
@@ -1545,7 +1482,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    877, 'LEDESMA', '-', '988199545', '-', 
+    158,  '-',  '-', 
     '-', 'Proceso administrativo Laboral', 
     'EXPEDIENTE N°: Nº2516-2022/CC1', 
     'Empresa y Comunidades', 'Sin contrato', 
@@ -1554,7 +1491,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    878, 'LEDESMA', '-', '988199545', '-', 
+    158,  '-',  '-', 
     '-', 'Levantamiento de Medida Cautelar Laboral', 
     'EXPEDIENTE N°: 272-2017-0-1505-JR-LA-01\r\n', 
     'Empresa y Comunidades', 'Sin contrato', 
@@ -1563,7 +1500,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    879, 'LEDESMA', '-', '988199545', '-', 
+    158,  '-',  '-', 
     '-', 'Partición Judicial laboral', 
     'EXPEDIENTE N°:  \r\nNº 00358-2022-0-1501-JP-CI-03\r\n', 
     'Empresa y Comunidades', 'Sin contrato', 
@@ -1572,7 +1509,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    880, 'LEDESMA', '-', '988199545', '-', 
+    158, '-',  '-', 
     '-', 'Nulidad de Acto Jurídico civil', 
     'EXPEDIENTE N°:  \r\nNº 9303-2022-0-1817-JR-CO-07\r\n', 
     'Empresa y Comunidades', 'Sin contrato', 
@@ -1581,7 +1518,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    881, 'LEDESMA', '-', '988199545', '-', 
+    158, '-', '-', 
     '-', 'Nulidad de Acto Jurídico civil', 
     'EXPEDIENTE N°:  \r\nNº 01461-2022-86-1501-JR-CI-06\r\n', 
     'Empresa y Comunidades', 'Sin contrato', 
@@ -1590,7 +1527,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    882, 'LEDESMA', '-', '988199545', '-', 
+    158, '-', '-', 
     '-', 'OBLIGACIÓN DE DAR SUMA DE DINERO civil', 
     'EXPEDIENTE N°:  \r\nNº 01952-2022-0-1815-JP-CI-07\r\n', 
     'Empresa y Comunidades', 'Sin contrato', 
@@ -1599,7 +1536,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    883, 'LEDESMA', '-', '988199545', '-', 
+    158,  '-', '-', 
     '-', 'OBLIGACIÓN DE DAR SUMA DE DINERO civil', 
     'EXPEDIENTE N°:  \r\nNº 01293-2023-0-1507-JP-CO-02\r\n\r\n\r\n', 
     'Empresa y Comunidades', 'Sin contrato', 
@@ -1608,7 +1545,7 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    884, 'LEDESMA', '-', '988199545', '-', 
+    158,  '-', '-', 
     '-', 'OBLIGACIÓN DE DAR SUMA DE DINERO civil', 
     'EXPEDIENTE N°: 00102-2023-0-1833-JP-CI-03', 
     'Empresa y Comunidades', 'Sin contrato', 
@@ -1617,25 +1554,19 @@ VALUES
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    885, 'CAJA HUANCAYO', '-', '0', '-', 
+    159,  '-', '-', 
     '-', 'VARIOS ', 'VARIOS ', 'Empresa y Comunidades', 
     'Contrato Vigente ', 'En proceso', 
     0, '2024-05-01 00:00:00.000', NULL, 
     '[\"frank_cc\", \"nestor_vp\"]'
   ), 
   (
-    886, 'PRAXIS ', '-', '0', '-', '-', '-', 
+    160, '-', '-', '-', '-', 
     '-', 'Empresa y Comunidades', 'Pendiente Firmar ', 
     '-', 0, '2024-05-01 00:00:00.000', 
     NULL, '[\"frank_cc\", \"nestor_vp\"]'
   ), 
-  (
-    887, 'x', 'x', '0', 'x', 'x', 'x', 'x',  
-    'Civil', 'x', 'ñññññññddddddddddñññññññññ', 
-    32, '2024-05-02 02:52:40.937', NULL, 
-    '[\"frank_cc\", \"nestor_vp\"]'
-  );
-
+ 
 
 
 
