@@ -11,7 +11,9 @@ export class PagosService {
         // buscar todos los pagos y sus casos relacionados
         return this.prisma.pagos.findMany({
             include: {
+                // incluir a los clientes relacionados con los casos
                 caso: true,
+                
             },
         });
     }
