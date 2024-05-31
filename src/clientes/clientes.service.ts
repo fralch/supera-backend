@@ -1,30 +1,62 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { Clientes, Prisma } from '@prisma/client';
+import { Clientes, Prisma, Casos } from '@prisma/client';
 
 @Injectable()
-
 export class ClientesService {
-    constructor(private prisma: PrismaService) {}
-    
-    
-    async findAll(){
-        // buscar todos los clientes y sus casos relacionados
-        return this.prisma.clientes.findMany({
-        include: {
-            // incluir a los casos relacionados con los clientes
-            casos: true,
-            
+  constructor(private prisma: PrismaService) {}
+
+  async findAll() {
+    // buscar todos los clientes y sus casos relacionados
+    return this.prisma.clientes.findMany({
+      include: {
+        // incluir a los casos relacionados con los clientes
+        casos: true,
+      },
+    });
+  }
+
+  async findOne(dni: number) {
+    return this.prisma.clientes.findUnique({
+      where: { dni },
+      include: {
+        casos: true,
+      },
+    });
+  }
+
+  async updateDNI(data) {
+    const { dni, nuevo_dni, ...rest } = data;
+
+    // Iniciar una transacción
+    const result = await this.prisma.$transaction(async (prisma) => {
+      // Verificar si el cliente existe
+      const clienteExistente = await prisma.clientes.findUnique({
+        where: { dni: Number(dni) },
+      });
+
+      if (!clienteExistente) {
+        throw new Error(`Cliente con dni ${dni} no encontrado`);
+      }
+
+      // Actualizar el dni del cliente
+      const actualizacion = await prisma.clientes.update({
+        where: { dni: Number(dni) },
+        data: {
+          dni: Number(nuevo_dni),
+          ...rest,
         },
-        });
-    }
-    
-    async findOne(id: number) {
-        return this.prisma.clientes.findUnique({
-        where: { id },
-        include: {
-            casos: true,
-        },
-        });
-    }
+      });
+
+      // Actualizar las referencias en la tabla Casos
+      await prisma.casos.updateMany({
+        where: { cliente_dni: Number(dni) },
+        data: { cliente_dni: Number(nuevo_dni) },
+      });
+
+      return actualizacion;
+    });
+
+    return result;
+  }
 }
