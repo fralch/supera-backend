@@ -1,17 +1,19 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { Clientes, Prisma, Casos } from '@prisma/client';
+import { Clientes, Prisma, Casos, Pagos } from '@prisma/client';
 
 @Injectable()
 export class ClientesService {
   constructor(private prisma: PrismaService) {}
 
   async findAll() {
-    // buscar todos los clientes y sus casos relacionados
     return this.prisma.clientes.findMany({
       include: {
-        // incluir a los casos relacionados con los clientes
-        casos: true,
+        casos: {
+          include: {
+            pagos: true,
+          },
+        },
       },
     });
   }
