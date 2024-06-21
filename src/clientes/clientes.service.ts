@@ -27,6 +27,11 @@ export class ClientesService {
     });
   }
 
+  // create a new client
+  async create(data: Prisma.ClientesCreateInput) {
+    return this.prisma.clientes.create({ data });
+  }
+
   async updateDNI(data) {
     const { dni, nuevo_dni, ...rest } = data;
 

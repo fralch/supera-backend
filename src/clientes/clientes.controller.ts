@@ -25,6 +25,11 @@ export class ClientesController {
     return this.clientesService.findOne(Number(id));
   }
 
+  @Post('create')
+  async create(@Body() data): Promise<Clientes> {
+    return this.clientesService.create(data);
+  }
+
   @Post()
   async updateDNI(@Body() data) {
     if (!data.dni) {
