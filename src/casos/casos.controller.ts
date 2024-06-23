@@ -13,5 +13,12 @@ export class CasosController {
     return this.casosService.findAll();
   }
 
+
+  //update caso 
+  @Post('update/:id')
+  async updateCaso(@Param('id') id: number, @Body() data: Casos) {
+    return this.casosService.updateCaso(+id, data);
+  }
+
   
 }

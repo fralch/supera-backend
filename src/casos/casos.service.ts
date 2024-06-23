@@ -28,6 +28,17 @@ export class CasosService {
     });
   }
 
+  async updateCaso(id: number, data: Prisma.CasosUpdateInput) {
+    return this.prisma.casos.update({
+      where: { id },
+      data,
+      include: {
+        cliente: true,
+        pagos: true,
+      },
+    });
+  }
+
 
   
 }
