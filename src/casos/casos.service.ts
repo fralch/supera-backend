@@ -3,17 +3,18 @@ import { PrismaService } from 'src/prisma/prisma.service';
 import { Casos, Clientes, Pagos, Prisma } from '@prisma/client';
 
 @Injectable()
-
 export class CasosService {
   constructor(private prisma: PrismaService) {}
 
-  
-  async findAll(){
-  // buscar todos los casos y sus clientes relacionados y pagos relacionados
-  return this.prisma.casos.findMany({
+  async findAll() {
+    // buscar todos los casos y sus clientes relacionados y pagos relacionados
+    return this.prisma.casos.findMany({
       include: {
-        cliente: true, 
+        cliente: true,
         pagos: true,
+      },
+      orderBy: {
+        fecha: 'desc',
       },
     });
   }
@@ -39,6 +40,7 @@ export class CasosService {
     });
   }
 
-
-  
+  async create(data: Prisma.CasosCreateInput) {
+    return this.prisma.casos.create({ data });
+  }
 }
