@@ -16,9 +16,25 @@ export class PagosService {
     });
   }
 
+  async findOnebyCaso(caso_id: number) {
+    // buscar un pago por su id
+    return this.prisma.pagos.findFirst({
+      where: { caso_id },
+    });
+  }
+
   async create(data: Prisma.PagosCreateInput) {
     // crear un nuevo pago
     return this.prisma.pagos.create({
+      data,
+    });
+  }
+
+  async update(id: number, data) {
+    // actualizar un pago
+    console.log(id, data);
+    return this.prisma.pagos.update({
+      where: { id },
       data,
     });
   }

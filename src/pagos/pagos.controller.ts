@@ -34,6 +34,42 @@ export class PagosController {
       "estado": "pendiente"
     }
     */
+    if (!data.caso) {
+      throw new BadRequestException('La propiedad "caso" es obligatoria');
+    }
     return this.pagosService.create(data);
+  }
+
+  @Post('montototal')
+  async updateMontoTotal(@Body() data) {
+    // console.log(data);
+    const { id, monto_total } = data;
+    if (!id || !monto_total) {
+      throw new BadRequestException('id y monto_total son requeridos');
+    }
+    let pago = await this.pagosService.findOnebyCaso(id);
+    console.log(pago);
+    if (!pago) {
+      const obj = {
+        monto: 0,
+        fecha_pago: new Date(),
+        descripcion: 'Iniciando monto total',
+        metodo_pago: 'ninguno',
+        monto_total,
+        saldo_restante: monto_total,
+        estado: 'pendiente',
+        caso: {
+          connect: { id },
+        },
+      };
+      return this.pagosService.create(obj);
+    }
+    let id_pago = pago.id;
+    return this.pagosService.update(id_pago, { monto_total });
+  }
+
+  @Put(':id')
+  async update(@Param('id') id: number, @Body() data) {
+    return this.pagosService.update(id, data);
   }
 }
