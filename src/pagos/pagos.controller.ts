@@ -34,9 +34,7 @@ export class PagosController {
       "estado": "pendiente"
     }
     */
-    if (!data.caso) {
-      throw new BadRequestException('La propiedad "caso" es obligatoria');
-    }
+
     return this.pagosService.create(data);
   }
 
