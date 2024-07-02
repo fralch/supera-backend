@@ -1,41 +1,46 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
-import { Casos, Prisma } from '@prisma/client';
+import { Casos, Clientes, Pagos, Prisma } from '@prisma/client';
 
 @Injectable()
-
 export class CasosService {
   constructor(private prisma: PrismaService) {}
 
-  async create(data: Prisma.CasosCreateInput): Promise<Casos> {
-    return this.prisma.casos.create({ data });
+  async findAll() {
+    // buscar todos los casos y sus clientes relacionados y pagos relacionados
+    return this.prisma.casos.findMany({
+      include: {
+        cliente: true,
+        pagos: true,
+      },
+      orderBy: {
+        fecha: 'desc',
+      },
+    });
   }
 
-  async findAll(): Promise<Casos[]> {
-    return this.prisma.casos.findMany();
-  }
-
-  async findOne(id: number): Promise<Casos> {
+  async findOne(id: number) {
     return this.prisma.casos.findUnique({
       where: { id },
+      include: {
+        cliente: true,
+        pagos: true,
+      },
     });
   }
 
-  async update(id: number, data: Prisma.CasosCreateInput): Promise<Casos> {
-    // const currentDate = new Date();
-    const nuevoCasoData: Prisma.CasosCreateInput = {
-      ...data,
-      // fecha: currentDate, // Agregar la fecha y hora actual al objeto de datos
-    };
+  async updateCaso(id: number, data: Prisma.CasosUpdateInput) {
     return this.prisma.casos.update({
       where: { id },
-      data: nuevoCasoData,
+      data,
+      include: {
+        cliente: true,
+        pagos: true,
+      },
     });
   }
 
-  async remove(id: number): Promise<Casos> {
-    return this.prisma.casos.delete({
-      where: { id },
-    });
+  async create(data: Prisma.CasosCreateInput) {
+    return this.prisma.casos.create({ data });
   }
 }
