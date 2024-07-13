@@ -9,6 +9,6 @@ async function bootstrap() {
     preflightContinue: false,
     optionsSuccessStatus: 204,
   }); // habilitar CORS para todas las rutas
-  await app.listen(3000);
+  await app.listen(4000);
 }
 bootstrap();
