@@ -43,4 +43,11 @@ export class CasosService {
   async create(data: Prisma.CasosCreateInput) {
     return this.prisma.casos.create({ data });
   }
+
+  async uploadFile(id: number, data: any) {
+    return this.prisma.casos.update({
+      where: { id },
+      data,
+    });
+  }
 }
